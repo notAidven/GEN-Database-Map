@@ -2,7 +2,7 @@
 
 ## Viewing Your Prototype
 
-**Simply open [index.html](index.html) in your web browser!**
+**Open [index.html](index.html) in your web browser**
 
 Double-click the `index.html` file, or right-click and select "Open With" → your preferred browser (Chrome, Firefox, Safari, Edge).
 
