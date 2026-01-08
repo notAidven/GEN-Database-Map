@@ -2,7 +2,7 @@
 
 ## Viewing Your Prototype
 
-**Open [index.html](index.html) in your web browser**
+**Open [index.html](index.html) in your web browser.**
 
 Double-click the `index.html` file, or right-click and select "Open With" → your preferred browser (Chrome, Firefox, Safari, Edge).
 
@@ -15,7 +15,7 @@ Double-click the `index.html` file, or right-click and select "Open With" → yo
    - 🟠 Orange = 5th Gen District H&C
 3. **Click any marker** to see detailed project information in the side panel
 
-## Using the Filters
+<!--## Using the Filters
 
 ### System Type Filter
 Use the dropdown menu to show only specific types of systems:
