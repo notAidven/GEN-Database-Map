@@ -106,6 +106,59 @@ input[type="text"] {
     color: #666;
 }
 
+/* Policy Highlight Section */
+.policy-highlight {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 1px solid #c8e6c9;
+}
+
+.policy-highlight h4 {
+    color: #2c5f2d;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    border-bottom: 2px solid #2c5f2d;
+    padding-bottom: 8px;
+}
+
+.policy-points {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.policy-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.policy-icon {
+    font-size: 1.4em;
+    min-width: 30px;
+    text-align: center;
+}
+
+.policy-point strong {
+    color: #2c5f2d;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95em;
+}
+
+.policy-point p {
+    margin: 0;
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.4;
+}
+
 .legend {
     margin-top: 20px;
 }
@@ -117,16 +170,42 @@ input[type="text"] {
 
 .legend-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.legend-item:last-child {
+    border-bottom: none;
+}
+
+.legend-text {
+    flex: 1;
+}
+
+.legend-title {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.legend-desc {
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+    display: block;
 }
 
 .marker-dot {
     width: 20px;
     height: 20px;
+    min-width: 20px;
     border-radius: 50%;
     border: 2px solid #333;
+    margin-top: 2px;
 }
 
 .marker-dot.gshp {
@@ -199,12 +278,14 @@ input[type="text"] {
     color: white;
 }
 
-.system-badge.gen4 {
+.system-badge.gen4,
+.system-badge.\34 gdhc {
     background-color: #2196F3;
     color: white;
 }
 
-.system-badge.gen5 {
+.system-badge.gen5,
+.system-badge.\35 gdhc {
     background-color: #FF9800;
     color: white;
 }
@@ -224,6 +305,88 @@ input[type="text"] {
 
 .resources a:hover {
     text-decoration: underline;
+}
+
+/* Glossary Section */
+.glossary {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #2c5f2d;
+}
+
+.glossary h4 {
+    color: #2c5f2d;
+    margin-bottom: 15px;
+}
+
+.glossary dl {
+    margin: 0;
+}
+
+.glossary dt {
+    font-weight: 600;
+    color: #333;
+    margin-top: 12px;
+    font-size: 0.95em;
+}
+
+.glossary dt:first-child {
+    margin-top: 0;
+}
+
+.glossary dd {
+    margin-left: 0;
+    margin-top: 4px;
+    color: #666;
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
+}
+
+/* System Type Info in Project Details */
+.system-type-info {
+    margin-bottom: 15px;
+}
+
+.system-type-explainer {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #f0f7f0;
+    border-radius: 4px;
+    border-left: 3px solid #2c5f2d;
+}
+
+/* Technical Details Explainers */
+.section-explainer {
+    font-size: 0.85em;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.tech-item {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.tech-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tech-explainer {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 4px;
+    padding: 6px 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    line-height: 1.4;
 }
 
 footer {

@@ -41,13 +41,20 @@ function addMarkersToMap(systems) {
         const marker = L.marker([system.lat, system.lng], { icon: customIcon })
             .addTo(map);
 
-        // Add popup with basic info
-        const popupContent = `
+        // Add tooltip for hover (shows on mouse over)
+        const tooltipContent = `
             <strong>${system.name}</strong><br>
             ${system.location}<br>
             <em>${getSystemTypeName(system.systemType)}</em>
         `;
-        marker.bindPopup(popupContent);
+        marker.bindTooltip(tooltipContent, {
+            permanent: false,
+            direction: 'top',
+            offset: [0, -10]
+        });
+
+        // Add popup with basic info (shows on click)
+        marker.bindPopup(tooltipContent);
 
         // Add click event to show details in info panel
         marker.on('click', function() {
@@ -101,14 +108,30 @@ function showSystemDetails(system) {
         `;
     }
 
-    // Technical Details
+    // Technical Details - with explanatory context
     if (showField(system.heatPump) || showField(system.thermalResources) || showField(system.distribution)) {
         sectionsHtml += `
             <div class="detail-section">
                 <h4>Technical Details</h4>
-                ${showField(system.heatPump) ? `<p><strong>Heat Pump:</strong> ${system.heatPump}</p>` : ''}
-                ${showField(system.thermalResources) ? `<p><strong>Thermal Resources:</strong> ${system.thermalResources}</p>` : ''}
-                ${showField(system.distribution) ? `<p><strong>Distribution:</strong> ${system.distribution}</p>` : ''}
+                <p class="section-explainer">How this system captures and distributes geothermal energy:</p>
+                ${showField(system.heatPump) ? `
+                    <div class="tech-item">
+                        <p><strong>Heat Pump Type:</strong> ${system.heatPump}</p>
+                        <p class="tech-explainer">${getHeatPumpExplanation(system.heatPump)}</p>
+                    </div>
+                ` : ''}
+                ${showField(system.thermalResources) ? `
+                    <div class="tech-item">
+                        <p><strong>Underground Infrastructure:</strong> ${system.thermalResources}</p>
+                        <p class="tech-explainer">These are the boreholes and underground loops that exchange heat with the earth's stable temperature.</p>
+                    </div>
+                ` : ''}
+                ${showField(system.distribution) ? `
+                    <div class="tech-item">
+                        <p><strong>Distribution Network:</strong> ${system.distribution}</p>
+                        <p class="tech-explainer">The pipe network that carries heated or cooled water to connected buildings.</p>
+                    </div>
+                ` : ''}
             </div>
         `;
     }
@@ -156,10 +179,16 @@ function showSystemDetails(system) {
         `;
     }
 
+    // Get system type explanation
+    const systemExplanation = getSystemTypeExplanation(system.systemType);
+
     infoPanel.innerHTML = `
         <div class="project-details">
             <h3>${system.name}</h3>
-            <span class="system-badge ${system.systemType}">${getSystemTypeName(system.systemType)}</span>
+            <div class="system-type-info">
+                <span class="system-badge ${system.systemType}">${getSystemTypeName(system.systemType)}</span>
+                <p class="system-type-explainer">${systemExplanation.simple}</p>
+            </div>
             ${sectionsHtml}
         </div>
     `;
@@ -210,4 +239,42 @@ function formatKey(key) {
     return key
         .replace(/([A-Z])/g, ' $1')
         .replace(/^./, str => str.toUpperCase());
+}
+
+// Get plain-language explanation for heat pump types
+function getHeatPumpExplanation(heatPumpType) {
+    const type = heatPumpType.toLowerCase();
+
+    if (type.includes('gshp') || type.includes('ground source')) {
+        return 'Ground Source Heat Pumps use pipes buried underground to transfer heat. In winter, they extract warmth from the earth; in summer, they deposit heat back into the ground. They use 25-50% less electricity than conventional heating/cooling.';
+    }
+    if (type.includes('water source') || type.includes('wshp')) {
+        return 'Water Source Heat Pumps connect to a shared water loop. They extract or reject heat to this common water system, allowing buildings to share thermal energy efficiently.';
+    }
+    if (type.includes('air source') || type.includes('ashp')) {
+        return 'Air Source Heat Pumps extract heat from outdoor air. While less efficient than ground source in extreme temperatures, they are simpler to install.';
+    }
+    return 'Heat pumps move thermal energy between the building and an external source, providing both heating and cooling with high efficiency.';
+}
+
+// Get detailed explanation for system types
+function getSystemTypeExplanation(systemType) {
+    const explanations = {
+        'gshp': {
+            name: 'Individual Ground Source Heat Pump',
+            simple: 'A single building uses underground pipes to heat and cool itself.',
+            detail: 'This system serves one building with its own dedicated underground loop. Pipes are buried in the ground where temperatures stay constant year-round (around 50-55°F). The heat pump extracts warmth in winter and deposits excess heat in summer.'
+        },
+        '4gdhc': {
+            name: '4th Generation District Heating & Cooling',
+            simple: 'A central plant provides heating and cooling to multiple buildings through shared pipes.',
+            detail: 'This district system uses a central energy station with large heat pumps that heat or cool water to moderate temperatures (around 120-160°F for heating). This water is distributed through underground pipes to serve multiple buildings, which is more efficient than each building having its own system.'
+        },
+        '5gdhc': {
+            name: '5th Generation District Heating & Cooling',
+            simple: 'Buildings share a common underground water loop and can exchange heat with each other.',
+            detail: 'The most advanced district system: buildings connect to a shared ambient temperature water loop (60-80°F). Each building has its own heat pump to extract what it needs. The key innovation is that buildings can share thermal energy - a building needing cooling can send its excess heat to one that needs heating, dramatically improving overall efficiency.'
+        }
+    };
+    return explanations[systemType] || { name: systemType, simple: '', detail: '' };
 }
