@@ -42,7 +42,7 @@ const geothermalSystems = [
     "buildings": "Approximately 20",
     "households": "N/A",
     "population": "2,000",
-    "emissionsBenefits": "70% reduction in natural gas consumption. Scope 1 and 2 emissions (operational and purchased electricity) decreased by 71% the College\\'s baseline reporting year of fiscal year 2008, accounting for changes due to the commercial-scale wind turbines, geothermal system, and \\\"greening\\\" of Xcel\\'s electricity grid.",
+    "emissionsBenefits": "70% reduction in natural gas consumption. Scope 1 and 2 emissions (operational and purchased electricity) decreased by 71% the College's baseline reporting year of fiscal year 2008, accounting for changes due to the commercial-scale wind turbines, geothermal system, and \"greening\" of Xcel's electricity grid.",
     "operationalSuccesses": "Decreased energy consumption by 46%. Anticipated 10-15% reduction in utility cost per square foot.",
     "cost": "$41M",
     "funding": "Unknown.",
@@ -51,7 +51,7 @@ const geothermalSystems = [
     "thermalResources": "Three borehole fields: Bell Field, Mini Bald Spot, and Bald Spot. Bell Field: 95 horizontal hores, 510 feet long. Mini Bald Spot: 77 vertical bores, 520 feet depth. Bald Spot: 134 vertical bores, 520 feet depth. Energy station with 800ton heat pump.",
     "distribution": "60 miles of piping.",
     "heatPump": "GSHPs.",
-    "additionalInfo": "On the coldest days of the region, the geothermal system will serve 20% of Carleton\\'s heating load. On an annual basis, the system is expected to deliver 70% of the College\\'s total heating and cooling energy. The geothermal system was also able to take advantage of existing geothermal resources based on its location.",
+    "additionalInfo": "On the coldest days of the region, the geothermal system will serve 20% of Carleton's heating load. On an annual basis, the system is expected to deliver 70% of the College's total heating and cooling energy. The geothermal system was also able to take advantage of existing geothermal resources based on its location.",
     "contact": "Unknown",
     "sources": "1. Colleges see untapped potential in geothermal district energy systems (2022) 2. Carleton College Utility Master Plan 3. Sustainability at Carleton: Geothermal Campus"
   },
@@ -124,7 +124,7 @@ const geothermalSystems = [
     "households": "N/A",
     "population": "2,500",
     "emissionsBenefits": "Decreased natural gas usage, exact GHG unknown",
-    "operationalSuccesses": "Plans for expansion. Pump house and distribution line vault installed in Lion\\'s Park (potential 504 additional tons capacity). Geothermal pipes installed to curb line for 58 prospective users",
+    "operationalSuccesses": "Plans for expansion. Pump house and distribution line vault installed in Lion's Park (potential 504 additional tons capacity). Geothermal pipes installed to curb line for 58 prospective users",
     "cost": "Capital: $10.2M total, network $2.2M. Annual operating: estimated $25k",
     "funding": "GSHP: USDA REAP grants/loans, Alliant Energy incentives/rebates. Network: DOE grant $1M, HUD Community Development Block Grant $1M, EPA $500k, Main Street Iowa $100k, Alliant Energy rebates",
     "ownership": "Co-op Utility: Municipality owned, leased month-to-month to WUDE LLC user group. Operator: Geothermal Eco Options (since 2020)",
@@ -180,7 +180,7 @@ const geothermalSystems = [
     "emissionsBenefits": "N/A",
     "operationalSuccesses": "N/A",
     "cost": "Unknown",
-    "funding": "For individual building electriciation and hot water equipment upgrades: Federal Capital Fund Program. Massachusetts Energy Efficiency Programs will help cover energy efficiency investments. For the addition of electrical appliances, EPA\\'s Environmental Justice Government-to-Government Program (EJG2G).",
+    "funding": "For individual building electriciation and hot water equipment upgrades: Federal Capital Fund Program. Massachusetts Energy Efficiency Programs will help cover energy efficiency investments. For the addition of electrical appliances, EPA's Environmental Justice Government-to-Government Program (EJG2G).",
     "ownership": "?",
     "subscription": "N/A",
     "thermalResources": "TBD.",
@@ -234,7 +234,7 @@ const geothermalSystems = [
     "emissionsBenefits": "Anticipated 60% reduction of carbon emissions.",
     "operationalSuccesses": "20% decrease in monthly energy bills.",
     "cost": "Unknown",
-    "funding": "Energy efficiency credits to offset costs of weatherization and installation in homes and businesses. DOE\\'s GTO Community Geothermal Heating and Cooling Initiative, 7.8M grant.",
+    "funding": "Energy efficiency credits to offset costs of weatherization and installation in homes and businesses. DOE's GTO Community Geothermal Heating and Cooling Initiative, 7.8M grant.",
     "ownership": "Utility",
     "subscription": "$10/month.",
     "thermalResources": "1 borefield. 90 boreholes. Vertically and directional/deviated drilling.",
@@ -294,7 +294,7 @@ const geothermalSystems = [
     "thermalResources": "TBD.",
     "distribution": "TBD.",
     "heatPump": "GSHPs.",
-    "additionalInfo": "For the building renovations and home appliance upgrades, the cost significantly decreased due to accessible grants. For one resident, the work cost of $55,000 decreased to $0 and utility bills dropped frm $200 to $25. This has not yet accounted for connection to the network, or the installation of a GSHP system. The idea of installing a geothermal network was a pursued in part of the Ann Arbor\\'s climate agenda: A2ZERO, the city\\'s plan for a just transition to carbon neutrality by 2030. Neighborhood decarbonization had already been occuring in Bryant through the form of individual building renovations. Then, as the municipality was considering electrically powered ASHPs for cooling, they stumbled upon GENs.",
+    "additionalInfo": "For the building renovations and home appliance upgrades, the cost significantly decreased due to accessible grants. For one resident, the work cost of $55,000 decreased to $0 and utility bills dropped frm $200 to $25. This has not yet accounted for connection to the network, or the installation of a GSHP system. The idea of installing a geothermal network was a pursued in part of the Ann Arbor's climate agenda: A2ZERO, the city's plan for a just transition to carbon neutrality by 2030. Neighborhood decarbonization had already been occuring in Bryant through the form of individual building renovations. Then, as the municipality was considering electrically powered ASHPs for cooling, they stumbled upon GENs.",
     "contact": "Joe Lange, Senior Energy Analyst at City of Ann Arbor, jlange@a2gov.org",
     "sources": "1. Building Decarbonization Coalition: Case Study for Ann Arbor, Michigan 2. Open EI: Community Geothermal, Energy, Cost, and Carbon Modeling for District Design - Ann Arbor Michigan 3. City of Ann Arbor Government Website: Geothermal Heating and Cooling"
   },
@@ -339,7 +339,7 @@ const geothermalSystems = [
     "buildings": "8 (2025)",
     "households": "N/A",
     "population": "N/A",
-    "emissionsBenefits": "Total emissions savings unknown. For the Romeny Hall geothermal project alone, the systems is anticipated to reduce MSU\\'s associated carbon emissions by 1M pounds of CO2 per year.",
+    "emissionsBenefits": "Total emissions savings unknown. For the Romeny Hall geothermal project alone, the systems is anticipated to reduce MSU's associated carbon emissions by 1M pounds of CO2 per year.",
     "operationalSuccesses": "For buildings connected to the geothermal energy network, building energy use intensity decreased by 25% from 2007 to 2023. As for cost savings, the first campus energy district saves an average of $130,000 annually.",
     "cost": "Costs as of 2025 are unknown. In 2020, $2.5M on a geothermal system for Romney Hall. In 2025, MSU announced $50.5M worth of energy efficiency work, of which $3.5M was on piping upgrades for the network and boreholes.",
     "funding": "Univeristy major infrastructure and energy improvement reserves. Fees tied to room and board and other services MSU charges are used to fund the project.",
@@ -375,7 +375,7 @@ const geothermalSystems = [
     "thermalResources": "1 borefield, 8 boreholes, 375 feet deep.",
     "distribution": "Unknown",
     "heatPump": "GSHP system. 6 units.",
-    "additionalInfo": "The building has also sought to install 348 PV panels to supply about 75% of the winery\\'s electricity needs. They are also looking into using the geothermal system to chill wines.",
+    "additionalInfo": "The building has also sought to install 348 PV panels to supply about 75% of the winery's electricity needs. They are also looking into using the geothermal system to chill wines.",
     "contact": "Vineyard Email: info@huntwines.com",
     "sources": "1. Hunt Country Vineyards, Branchport, NY"
   },
@@ -401,7 +401,7 @@ const geothermalSystems = [
     "subscription": "Unknown",
     "thermalResources": "1 borefield, 90 boreholes. Also sources from wastewater streams.",
     "distribution": "Unknown",
-    "heatPump": "Two heat pump models are used: Piranha T15HC, which delivers all-electric decarbonized Domestic Hot Water (DHW) production from wastewater, and SHARC660 Wastewater Energy Transfer (WET), which provides a heat source/sink to offset and condition the buildings\\' geothermal loop.",
+    "heatPump": "Two heat pump models are used: Piranha T15HC, which delivers all-electric decarbonized Domestic Hot Water (DHW) production from wastewater, and SHARC660 Wastewater Energy Transfer (WET), which provides a heat source/sink to offset and condition the buildings' geothermal loop.",
     "additionalInfo": "N/A",
     "contact": "Vital Brooklyn Institute Contact Form",
     "sources": "1. Alafia: Electrified, Affordable, Scalable Brooklyn NY 2. Sharc Energy: Alafia, A Flagship for Equitable, Clean Energy Development in East New York"
@@ -612,7 +612,7 @@ const geothermalSystems = [
     "emissionsBenefits": "Unknown",
     "operationalSuccesses": "The cooling/heating costs are stable and predictable for homeowners, reducing potential financial strain. The development process, where 200 homes are built per phase of construction, allows the developer to utilize economies of scale to their benefit, reducing the cost of convential geothermal heating and cooling by 50% per home.",
     "cost": "Unknown.",
-    "funding": "Private investment. Initial construction is financed with industry-standard infrastructure debt. After the network is operational, transition towards long-term, permanent financing. The project is funded by specialized green infrastructure lenders like Locus impact and investors backed by insurance companies who \\\"appreciate the long-term... revenue\\\"",
+    "funding": "Private investment. Initial construction is financed with industry-standard infrastructure debt. After the network is operational, transition towards long-term, permanent financing. The project is funded by specialized green infrastructure lenders like Locus impact and investors backed by insurance companies who \"appreciate the long-term... revenue\"",
     "ownership": "Private",
     "subscription": "$60/month",
     "thermalResources": "Unknown.",
@@ -636,18 +636,18 @@ const geothermalSystems = [
     "buildings": "Unknown. 63 buildings in total, 37% VRF.",
     "households": "Unknown",
     "population": "Unknown",
-    "emissionsBenefits": "The emissions savings of the geothermal system specfically is unknown. In WSU\\'s Climate Action Plan, the college has a vision to achieve carbon neutrality by 2040.",
+    "emissionsBenefits": "The emissions savings of the geothermal system specfically is unknown. In WSU's Climate Action Plan, the college has a vision to achieve carbon neutrality by 2040.",
     "operationalSuccesses": "Unknown, TBD.",
     "cost": "Total cost unknown. Construction for one borefield was $500,000.",
-    "funding": "As a part of WSU\\'s Climate Action Plan, the college receives funding throuhg state capital improvement funds, internal capital development funds, state and federal grants, utility rebates, and WSU\u2019s revolving green fund. WSU was one of the first university to set an investment fund for energy saving and water-use projects in 2009. The green fund of $5 million, the university\u2019s cash management fund borrows from itself, runs the account into a deficit, then pays off the debt with annual energy savings and an additional 3% interest payment.",
+    "funding": "As a part of WSU's Climate Action Plan, the college receives funding throuhg state capital improvement funds, internal capital development funds, state and federal grants, utility rebates, and WSU\u2019s revolving green fund. WSU was one of the first university to set an investment fund for energy saving and water-use projects in 2009. The green fund of $5 million, the university\u2019s cash management fund borrows from itself, runs the account into a deficit, then pays off the debt with annual energy savings and an additional 3% interest payment.",
     "ownership": "University/College",
     "subscription": "N/A",
     "thermalResources": "3 borefields, total boreholes unknown, 200-400 foot depth. There is interest in expanding with an addition 1/2 borefields.",
     "distribution": "1.5 miles of repurposed piping, originally constructed in the 1960s.",
     "heatPump": "Variable refrigerant flow heat pumps.",
-    "additionalInfo": "The geothermal network is a part of WSU\\'s Climate Action Plan. In addition to that project, WSU has minimized energy consumption with efficient windows, LED lighting, high insulation requirements, the installment of water-cooled ground-source VRF heat pumps, and energy recovery ventilation. Since 2009, the Unversity has recaptured over 21 million dollars in savings.",
+    "additionalInfo": "The geothermal network is a part of WSU's Climate Action Plan. In addition to that project, WSU has minimized energy consumption with efficient windows, LED lighting, high insulation requirements, the installment of water-cooled ground-source VRF heat pumps, and energy recovery ventilation. Since 2009, the Unversity has recaptured over 21 million dollars in savings.",
     "contact": "Justin Owen, Sustainability Manager, 801-626-6421. Analeah Vaughn, Sustainability Engagement Coordinator, analeahvaughn@weber.edu",
-    "sources": "1. Creating a More Sustainable College Campus with VRF Heat Pumps (2025) 2. WSU Digs 200 Deep-Water Wells to Help Save Energy (2016) 3. Weber State Turns to Water-Source Hybrid VRF Technology (2025) 4. From Energy Savings to Carbon Neutrality: Exploring Weber State University\\'s Sustainability Success (2023) 5. Weber State University Sustainability Map 6. WSU\\'s Climate Action Plan"
+    "sources": "1. Creating a More Sustainable College Campus with VRF Heat Pumps (2025) 2. WSU Digs 200 Deep-Water Wells to Help Save Energy (2016) 3. Weber State Turns to Water-Source Hybrid VRF Technology (2025) 4. From Energy Savings to Carbon Neutrality: Exploring Weber State University's Sustainability Success (2023) 5. Weber State University Sustainability Map 6. WSU's Climate Action Plan"
   },
   {
     "id": 25,
@@ -834,7 +834,7 @@ const geothermalSystems = [
     "thermalResources": "Two production wells drilled in 1982 and 1985. One injection well drilled in 1985.",
     "distribution": "Total 3 mile distribution loop.",
     "heatPump": "GSHP, one unit for each residential building.",
-    "additionalInfo": "It is not clear whether the entire system is decomissioned, or if it\\'s only the geothermal system for specific houses.",
+    "additionalInfo": "It is not clear whether the entire system is decomissioned, or if it's only the geothermal system for specific houses.",
     "contact": "Public Utilities Commission of Nevada",
     "sources": "1. Avalon Geothermal shuts down heating system, 75 Reno homes impacted (2024) 2. U.S. Geothermal District Heating: Barriers and Enablers (2008)"
   },
@@ -861,7 +861,7 @@ const geothermalSystems = [
     "thermalResources": "1 production well with production of up to 100 gpm or 140F water.",
     "distribution": "6 mile distribution line.",
     "heatPump": "GSHP.",
-    "additionalInfo": "The geothermal resource is also used as the communities\\' source for potable water. The quality of the water is clean and free of minerals.",
+    "additionalInfo": "The geothermal resource is also used as the communities' source for potable water. The quality of the water is clean and free of minerals.",
     "contact": "Unknown",
     "sources": "1. New Mexico Earth Matters (2006) 2. U.S. Geothermal District Heating: Barriers and Enablers (2005)"
   },
@@ -934,7 +934,7 @@ const geothermalSystems = [
     "households": "N/A",
     "population": "400 bed correctional facility.",
     "emissionsBenefits": "Unknown",
-    "operationalSuccesses": "The town supplemented the capital costs to oversize the system\\'s capacity to enable expansion of the system in the future. The facility staff estimated that the geothermal system saves them about $180,000 annually, and the savgings may have also been greater than that. The income from the correctional facility covers the operational costs for the system. The town also received an Oregon Energy Trust Grant to do a feasibility study of producing electricity from the geothermal well used for the district heating system.",
+    "operationalSuccesses": "The town supplemented the capital costs to oversize the system's capacity to enable expansion of the system in the future. The facility staff estimated that the geothermal system saves them about $180,000 annually, and the savgings may have also been greater than that. The income from the correctional facility covers the operational costs for the system. The town also received an Oregon Energy Trust Grant to do a feasibility study of producing electricity from the geothermal well used for the district heating system.",
     "cost": "Total capital costs: $1.2 M.",
     "funding": "State of Oregon: paid for most of the geothermal system development as an economic development project for Lakeview. Business Energy Tax Credit, which amount to about 35% of the investment. Although the town is a municipality and does not pay taxes, the credits are resalable to the market and were sold to COSTCO for $409,000.",
     "ownership": "Owned by town of lakeview.",
@@ -1106,11 +1106,11 @@ const geothermalSystems = [
     "heatPump": "Unknown",
     "additionalInfo": "A third well, drilled but not used since the 1980s, is being considered for use.",
     "contact": "City of Boise, Department of Public Works.",
-    "sources": "1. The Nation\\'s Oldest and Largest Geothermal District Heating System (2017) 2. City of Boise Geothermal District Heating System (2006)"
+    "sources": "1. The Nation's Oldest and Largest Geothermal District Heating System (2017) 2. City of Boise Geothermal District Heating System (2006)"
   },
   {
     "id": 42,
-    "name": "Fort Boise Veteran\\'s Hospital",
+    "name": "Fort Boise Veteran's Hospital",
     "location": "Boise, Idaho",
     "lat": 43.6166163,
     "lng": -116.200886,
@@ -1133,7 +1133,7 @@ const geothermalSystems = [
     "heatPump": "Unknown",
     "additionalInfo": "Second injection well is being explored to allow for the future expansion of the system. There are over 50 buildings in the VA Hospital Complex, of which many could be retrofitted to connect to the geothermal system.",
     "contact": "City of Boise, Department of Public Works.",
-    "sources": "1. The Nation\\'s Oldest and Largest Geothermal District Heating System (2017) 2. Production, temperature, and water level data for the four heating systems in the Boise Front Low Temperature Geothermal Resource Area, 1977-1997"
+    "sources": "1. The Nation's Oldest and Largest Geothermal District Heating System (2017) 2. Production, temperature, and water level data for the four heating systems in the Boise Front Low Temperature Geothermal Resource Area, 1977-1997"
   },
   {
     "id": 43,
@@ -1160,7 +1160,7 @@ const geothermalSystems = [
     "heatPump": "Unknown",
     "additionalInfo": "N/A",
     "contact": "City of Boise, Department of Public Works.",
-    "sources": "1. The Nation\\'s Oldest and Largest Geothermal District Heating System (2017) 2. Production, temperature, and water level data for the four heating systems in the Boise Front Low Temperature Geothermal Resource Area, 1977-1997"
+    "sources": "1. The Nation's Oldest and Largest Geothermal District Heating System (2017) 2. Production, temperature, and water level data for the four heating systems in the Boise Front Low Temperature Geothermal Resource Area, 1977-1997"
   },
   {
     "id": 44,
@@ -1169,7 +1169,7 @@ const geothermalSystems = [
     "lat": 42.5990714,
     "lng": -114.7594946,
     "systemType": "gshp",
-    "status": "Unknown: System began operating in 1989. In 1994, the homeowners in the subdivision housing community founding the water company Homeowners\\' Water System, Inc., to own and operate the geothermal system.",
+    "status": "Unknown: System began operating in 1989. In 1994, the homeowners in the subdivision housing community founding the water company Homeowners' Water System, Inc., to own and operate the geothermal system.",
     "description": "Residential",
     "siteType": "Residential",
     "capacity": "42 buidlings",
@@ -1241,7 +1241,7 @@ const geothermalSystems = [
     "heatPump": "Unknown",
     "additionalInfo": "Unknown",
     "contact": "Boise Warm Springs Water District: manager@bwswd.com",
-    "sources": "1. The Nation\\'s Oldest and Largest Geothermal District Heating System (2017) 2. The Inside Scoop on Boise\\'s Geothermal Heat"
+    "sources": "1. The Nation's Oldest and Largest Geothermal District Heating System (2017) 2. The Inside Scoop on Boise's Geothermal Heat"
   },
   {
     "id": 47,
@@ -1295,7 +1295,7 @@ const geothermalSystems = [
     "heatPump": "Unknown",
     "additionalInfo": "Unknown",
     "contact": "City of Susanville, Water & Natural Gas Services Contact: admin@cityofsusanville.org",
-    "sources": "1. Geo-Heat Center: City of Susanville Geothermal Energy Project (1981) 2. Assessing California\\'s Population of Low-Temperature Geothermal Wells for Plugging and Abandonment: Research and Analaysis on Long-Term Idle Wells (Sept. 2023)"
+    "sources": "1. Geo-Heat Center: City of Susanville Geothermal Energy Project (1981) 2. Assessing California's Population of Low-Temperature Geothermal Wells for Plugging and Abandonment: Research and Analaysis on Long-Term Idle Wells (Sept. 2023)"
   },
   {
     "id": 49,
@@ -1331,14 +1331,14 @@ const geothermalSystems = [
     "lat": 41.5450487,
     "lng": -120.7435998,
     "systemType": "4gdhc",
-    "status": "Operating. Original geothermal system was from 1992. Geothermal heating for three schools\\' buildings was completed in 2018. Building retrofits occured after the introduction of the geothermal system, completed in 2019.",
+    "status": "Operating. Original geothermal system was from 1992. Geothermal heating for three schools' buildings was completed in 2018. Building retrofits occured after the introduction of the geothermal system, completed in 2019.",
     "description": "School",
     "siteType": "School",
     "capacity": "3 school campuses.",
     "buildings": "3 school campuses. 2018, expanded to include community medical center. Interest in expanding to community senior housing center.",
     "households": "N/A",
     "population": "8000 students",
-    "emissionsBenefits": "Reduced the school districts\\' annual diesel fuel oil usage by 30,000 gallons. Reduced Last Frontier Healthcase District (LFHD) diesel fuel oil usage by 12,400 gallons per year. Equivalent to a total annual reduction of 451 metric tons of greenhouse gas emissions.",
+    "emissionsBenefits": "Reduced the school districts' annual diesel fuel oil usage by 30,000 gallons. Reduced Last Frontier Healthcase District (LFHD) diesel fuel oil usage by 12,400 gallons per year. Equivalent to a total annual reduction of 451 metric tons of greenhouse gas emissions.",
     "operationalSuccesses": "Savings for 2018-2019, when the geothermal heating system was introduced, was about $70,000. Estimated savings for 2019-2020, when build renovations for the campuses were projected to be complete, was $85,000. The school district would also sell geothermal heat to the community medical center, resulting in approximately $20,000 annual additional revenue for the school district. MJUSD is estimated to save $6.5 million in energy costs over the life of the system, which is likely to last as long as 30 years. MJUSD plans to use the savings to fund a variety of things including: field trips to colleges, increase student access to technology, provide professional development for staff, hire additional staff to meet the increasingly complex needs of students, and fund field trips to enhance student career options. The revenues received from LFHD will go into the school district general fund and be available to purchase equipment, supplies, books, and technology. MJUSD also plans to use the heating system to help teach students about geothermal resources and their applications. Kindergarten through high school students will be able to learn about geothermal resources in the classroom and see how a functioning system operates.",
     "cost": "$5M (FY2018): Building renovations for each school campus and new geothermal piping connection to neighboring medical facility.",
     "funding": "California Energy Commision: $4M. Match funding: $1M",
@@ -1538,7 +1538,7 @@ const geothermalSystems = [
     "heatPump": "GSHPs.",
     "additionalInfo": "The building is expected to exceed Diamond LEED standards. The geothermal system also faced installment challenges as the land could not be cleared or trees could not be cut down, making it logistically complex to locate the wells.",
     "contact": "Unknown.",
-    "sources": "1. How Culture and Nature Shaped the Vision for One of Michigan\\'s Most Sustainable Engineering Projects (2025) 2. Farmington Hills development in forst is greenest build in Michigan (2023)"
+    "sources": "1. How Culture and Nature Shaped the Vision for One of Michigan's Most Sustainable Engineering Projects (2025) 2. Farmington Hills development in forst is greenest build in Michigan (2023)"
   },
   {
     "id": 58,
@@ -1592,7 +1592,7 @@ const geothermalSystems = [
     "heatPump": "GSHPs.",
     "additionalInfo": "Unknown",
     "contact": "Unknown",
-    "sources": "1. The energy-saving story of Farmington Hills\\' City Hall (2021) 2. The Oakland Press: City Hall redesign will save energy and increase space in Farmington Hills (2008)"
+    "sources": "1. The energy-saving story of Farmington Hills' City Hall (2021) 2. The Oakland Press: City Hall redesign will save energy and increase space in Farmington Hills (2008)"
   },
   {
     "id": 60,
@@ -1725,9 +1725,9 @@ const geothermalSystems = [
     "thermalResources": "1 borehole field, 32 boreholes, 250 feet depth.",
     "distribution": "3.5 miles of underground piping circulating 2,500 gallons of 30% propylene glycol water through the geothermal heat pump systems.",
     "heatPump": "GSHPs.",
-    "additionalInfo": "The borefield is located under the parking lot and sidewalk. This building was a part of the City of St. Louis Park\\'s Climate Action Plan to reduce GHG emissions to net zero by 2040, which included replacing gas-powered vehicles and tools with electronics ones, installing public charging stations at the city hall and recreation center. The plan also mandated that all new construction projects funded by the city would be zero-energy buildings. This building is the first commercial ZEB in Minnesota.",
+    "additionalInfo": "The borefield is located under the parking lot and sidewalk. This building was a part of the City of St. Louis Park's Climate Action Plan to reduce GHG emissions to net zero by 2040, which included replacing gas-powered vehicles and tools with electronics ones, installing public charging stations at the city hall and recreation center. The plan also mandated that all new construction projects funded by the city would be zero-energy buildings. This building is the first commercial ZEB in Minnesota.",
     "contact": "Emily Ziring, EZiring@stlouisparkmn.gov",
-    "sources": "1. US DOE Geothermal Heat Pump Case Study 2. St. Louis Park\\'s Next-Generation Nature Center"
+    "sources": "1. US DOE Geothermal Heat Pump Case Study 2. St. Louis Park's Next-Generation Nature Center"
   },
   {
     "id": 65,
@@ -1752,7 +1752,7 @@ const geothermalSystems = [
     "thermalResources": "Heat-recovery chiller and geothermal chiller, heat sourced from geothermal wells from the World Science Center.",
     "distribution": "Unknown",
     "heatPump": "GSHP",
-    "additionalInfo": "The geothermal system is for the College\\'s Schaffer Library. This system was pursued in part of the College\\'s effort to upgrade campus energy efficiency.",
+    "additionalInfo": "The geothermal system is for the College's Schaffer Library. This system was pursued in part of the College's effort to upgrade campus energy efficiency.",
     "contact": "National Grid: efficiency@nationalgrid.com",
     "sources": "1. National Grid: Union College"
   },
@@ -1806,7 +1806,7 @@ const geothermalSystems = [
     "thermalResources": "Two boreholes, 500 feet deep.",
     "distribution": "N/A",
     "heatPump": "GSHP system.",
-    "additionalInfo": "The GSHP system was installed to improve the energy efficiency of the building, including triple-pane windows, a gable roof and vented attic, an insulated basement, and a smart thermostat. The home was a part of the United Way\\'s portfolio of homes to provide greater energy efficiency and significantly reduce or eliminate residents\\' utility costs.",
+    "additionalInfo": "The GSHP system was installed to improve the energy efficiency of the building, including triple-pane windows, a gable roof and vented attic, an insulated basement, and a smart thermostat. The home was a part of the United Way's portfolio of homes to provide greater energy efficiency and significantly reduce or eliminate residents' utility costs.",
     "contact": "Rick Wertheim, rwertheim@unitedwayli.org Robert Allgor, robert.allgor@nationalgrid.com.",
     "sources": "1. US DOE Geothermal Heat Pump Cases Studies: Medford Site Veterans Home"
   },
@@ -1851,7 +1851,7 @@ const geothermalSystems = [
     "buildings": "1",
     "households": "N/A",
     "population": "N/A",
-    "emissionsBenefits": "No fossil fuels are used for the building\\'s HVAC system.",
+    "emissionsBenefits": "No fossil fuels are used for the building's HVAC system.",
     "operationalSuccesses": "Unknown",
     "cost": "Unknown.",
     "funding": "Unknown.",
@@ -1866,7 +1866,7 @@ const geothermalSystems = [
   },
   {
     "id": 70,
-    "name": "St. Patrick\\'s Cathedral",
+    "name": "St. Patrick's Cathedral",
     "location": "New York, New York",
     "lat": 40.7127281,
     "lng": -74.0060152,
@@ -1879,7 +1879,7 @@ const geothermalSystems = [
     "households": "N/A",
     "population": "N/A",
     "emissionsBenefits": "Eliminated the cost of burning 218 barrels of oil per year, reducing carbon dioxide emissions by 94,000 kilograms of carbon annually.",
-    "operationalSuccesses": "Estimated to reduce Cathedral\\'s energy consumption by over 30%.",
+    "operationalSuccesses": "Estimated to reduce Cathedral's energy consumption by over 30%.",
     "cost": "$35M.",
     "funding": "Unknown",
     "ownership": "Private",
@@ -1887,9 +1887,9 @@ const geothermalSystems = [
     "thermalResources": "10 wells, 2,200 feet deep.",
     "distribution": "N/A",
     "heatPump": "GSHP.",
-    "additionalInfo": "The geothermal plant was a part of an effort to restore Saint Patrick\\'s Cathedral. One of the most emphasized benefits was that the system had virtually no visible impact on the architecture of the Cathedral while taking up 40% of the space of a conventional HVAC system. Larget city-based geothermal installation as of 2017. The church also took inspiration from the Trinity Church in Boston, and the General Theological Seminary and Union Theological Seminary in New York, all religious institutions that installed geothermal plants.",
+    "additionalInfo": "The geothermal plant was a part of an effort to restore Saint Patrick's Cathedral. One of the most emphasized benefits was that the system had virtually no visible impact on the architecture of the Cathedral while taking up 40% of the space of a conventional HVAC system. Larget city-based geothermal installation as of 2017. The church also took inspiration from the Trinity Church in Boston, and the General Theological Seminary and Union Theological Seminary in New York, all religious institutions that installed geothermal plants.",
     "contact": "Unknown",
-    "sources": "1. Geothermal System for St. Patrick\\'s Cathedral Restoration (2017) 2. St. Patrick\\'s Cathedral Goes Green with Geothermal (2020) 3. New York: the new Geothermal Plant for Saint Patrick\\'s Cathedral (2017)"
+    "sources": "1. Geothermal System for St. Patrick's Cathedral Restoration (2017) 2. St. Patrick's Cathedral Goes Green with Geothermal (2020) 3. New York: the new Geothermal Plant for Saint Patrick's Cathedral (2017)"
   },
   {
     "id": 71,
@@ -1933,7 +1933,7 @@ const geothermalSystems = [
     "households": "N/A",
     "population": "400",
     "emissionsBenefits": "Unknown",
-    "operationalSuccesses": "Energy use of 781,000 kWh per year. Capital cost of geothermal installation was paid off in 2.5 years, with savings continuing after 20 years of operation. Maintenance and operation of the system has also been simple: even though the building\\'s heat pumps have a nominal lifetime of 20 years, the center has only needed to replace a couple dozen.",
+    "operationalSuccesses": "Energy use of 781,000 kWh per year. Capital cost of geothermal installation was paid off in 2.5 years, with savings continuing after 20 years of operation. Maintenance and operation of the system has also been simple: even though the building's heat pumps have a nominal lifetime of 20 years, the center has only needed to replace a couple dozen.",
     "cost": "Unknown.",
     "funding": "State of North Dakota",
     "ownership": "Public institution.",
@@ -2338,7 +2338,7 @@ const geothermalSystems = [
     "households": "Unknown",
     "population": "Unknown",
     "emissionsBenefits": "Unknown",
-    "operationalSuccesses": "Building energy use intensity (EUI) was about 65 percent less than what Vermont\\'s energy efficiency code required. Awarded the \\\"Best of the Best\\\" in Commercial Building Design and Construction in 2022.",
+    "operationalSuccesses": "Building energy use intensity (EUI) was about 65 percent less than what Vermont's energy efficiency code required. Awarded the \"Best of the Best\" in Commercial Building Design and Construction in 2022.",
     "cost": "Unknown",
     "funding": "Unknown.",
     "ownership": "Private",
@@ -2400,9 +2400,9 @@ const geothermalSystems = [
     "thermalResources": "4 borefields. Total 6,100 boreholes. 300 to 800 foot depth. 2 lake exchange systems, closed loop design.",
     "distribution": "Water as the heat exchanger fluid.",
     "heatPump": "GSHP",
-    "additionalInfo": "The project involves collaboration with the Univeristy of Wisconsin-Madison, who monitors Epic\\'s geothermal system since its installation to understand system performance.",
+    "additionalInfo": "The project involves collaboration with the Univeristy of Wisconsin-Madison, who monitors Epic's geothermal system since its installation to understand system performance.",
     "contact": "info@epic.com",
-    "sources": "1. US DOE Geothermal Heat Pump Case Studies: Epic Healthcare Corporation (2025) 2. One of the World\\'s Largest Geothermal Networks is Buried Beneath a Corporate Campus in Rural WIsconsin (2025)"
+    "sources": "1. US DOE Geothermal Heat Pump Case Studies: Epic Healthcare Corporation (2025) 2. One of the World's Largest Geothermal Networks is Buried Beneath a Corporate Campus in Rural WIsconsin (2025)"
   },
   {
     "id": 90,
@@ -2483,7 +2483,7 @@ const geothermalSystems = [
     "heatPump": "GSHPs.",
     "additionalInfo": "The geothermal system was one aspect of the project. The building was completely redesigned, reconstructed, courtyards were added, and additional buildings and infrastructure like an assembly room, training complex, conference rooms, and data center was added. The costs account for all of these changes.",
     "contact": "N/A",
-    "sources": "1. Alderson Engineering, IRS Service Center 2. Columbia Construction breaks ground on $60 million IRS modernization project (2009) 3. GSA and Columbia Construction progressing with IRS\\' Andover Campus modernization (2010)"
+    "sources": "1. Alderson Engineering, IRS Service Center 2. Columbia Construction breaks ground on $60 million IRS modernization project (2009) 3. GSA and Columbia Construction progressing with IRS' Andover Campus modernization (2010)"
   },
   {
     "id": 94,
@@ -2595,7 +2595,7 @@ const geothermalSystems = [
   },
   {
     "id": 98,
-    "name": "NREL\\'s Alaska Campus",
+    "name": "NREL's Alaska Campus",
     "location": "Fairbanks, Alaska",
     "lat": 64.837845,
     "lng": -147.716675,
@@ -2611,7 +2611,7 @@ const geothermalSystems = [
     "operationalSuccesses": "Moved away from diesel heating fuel. Cost-effective when diesel prices high",
     "cost": "Operation: $0.24/kWh, Maintenance: $300/year",
     "funding": "Emerging Energy Technology Fund Grant from Alaska Energy Authority. Tax credits for GSHP",
-    "ownership": "Privately owned. NREL\\'s Alaska Campus",
+    "ownership": "Privately owned. NREL's Alaska Campus",
     "subscription": "N/A",
     "thermalResources": "No borefield",
     "distribution": "20% methanol, 80% water solution",
@@ -2637,7 +2637,7 @@ const geothermalSystems = [
     "emissionsBenefits": "Not operating",
     "operationalSuccesses": "Not operating",
     "cost": "Total project: $14 million",
-    "funding": "Support from CO \\\"Heat Beneath Our Feet\\\": $3.4M DOLA Energy/Mineral Impact Assistance Fund, $750k CO Energy Office, $3.5M CO Energy Office Geothermal Tax Credit. City and Eagle County taxpayers cover other costs",
+    "funding": "Support from CO \"Heat Beneath Our Feet\": $3.4M DOLA Energy/Mineral Impact Assistance Fund, $750k CO Energy Office, $3.5M CO Energy Office Geothermal Tax Credit. City and Eagle County taxpayers cover other costs",
     "ownership": "Municipality owned",
     "subscription": "Unknown",
     "thermalResources": "Unknown",
@@ -2724,7 +2724,7 @@ const geothermalSystems = [
     "thermalResources": "Two wells: 2,220 feet and 1,480 feet. No waste heat",
     "distribution": "Unknown",
     "heatPump": "GSHP",
-    "additionalInfo": "Advantage of placement over aquifer with \\\"artesian pressure\\\" - natural ground pressure brings hot water to surface. Geothermal linked to domestic hot water uses",
+    "additionalInfo": "Advantage of placement over aquifer with \"artesian pressure\" - natural ground pressure brings hot water to surface. Geothermal linked to domestic hot water uses",
     "contact": "CSI Physical Plant: 208-732-6600",
     "sources": "Unknown"
   },
