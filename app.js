@@ -2,12 +2,15 @@
 let map;
 let markers = [];
 let allSystems = geothermalSystems;
+let welcomeContent = ''; // Store original welcome content
 
 // Initialize map when page loads
 document.addEventListener('DOMContentLoaded', function() {
     initMap();
     addMarkersToMap(allSystems);
     setupEventListeners();
+    // Store the original welcome content
+    welcomeContent = document.getElementById('info-panel').innerHTML;
 });
 
 function initMap() {
@@ -195,6 +198,7 @@ function showSystemDetails(system) {
 
     infoPanel.innerHTML = `
         <div class="project-details">
+            <button class="back-button" onclick="showWelcome()">← Back to Overview</button>
             <h3>${system.name}</h3>
             <div class="system-type-info">
                 <span class="system-badge ${system.systemType}">${getSystemTypeName(system.systemType)}</span>
@@ -203,6 +207,12 @@ function showSystemDetails(system) {
             ${sectionsHtml}
         </div>
     `;
+}
+
+// Function to show welcome/overview content
+function showWelcome() {
+    const infoPanel = document.getElementById('info-panel');
+    infoPanel.innerHTML = welcomeContent;
 }
 
 function setupEventListeners() {

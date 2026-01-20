@@ -340,6 +340,24 @@ input[type="text"]::placeholder {
     background-color: var(--gen5-color);
 }
 
+/* Back Button */
+.back-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 16px;
+    transition: background 0.2s ease;
+}
+
+.back-button:hover {
+    background: var(--primary-dark);
+}
+
 /* Project Details */
 .project-details {
     animation: fadeIn 0.3s ease-out;
