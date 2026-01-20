@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initMap() {
     // Initialize the map centered on the continental US
-    map = L.map('map').setView([39.8283, -98.5795], 4);
+    map = L.map('map', {
+        zoomControl: true
+    }).setView([39.8283, -98.5795], 4);
 
-    // Add OpenStreetMap tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
+    // Use CartoDB Positron for a clean, minimal map style
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
 }
@@ -30,12 +33,20 @@ function addMarkersToMap(systems) {
     systems.forEach(system => {
         const markerColor = getMarkerColor(system.systemType);
 
-        // Create custom marker icon
+        // Create custom marker icon - clean, modern style
         const customIcon = L.divIcon({
             className: 'custom-marker',
-            html: `<div style="background-color: ${markerColor}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid #333;"></div>`,
-            iconSize: [24, 24],
-            iconAnchor: [12, 12]
+            html: `<div class="marker-pin" style="
+                background-color: ${markerColor};
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 2.5px solid white;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                transition: transform 0.2s ease;
+            "></div>`,
+            iconSize: [14, 14],
+            iconAnchor: [7, 7]
         });
 
         const marker = L.marker([system.lat, system.lng], { icon: customIcon })

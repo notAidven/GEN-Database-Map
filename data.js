@@ -2771,9 +2771,9 @@ function getSystemTypeName(type) {
 // Helper function to get marker color
 function getMarkerColor(type) {
     const colors = {
-        'gshp': '#4CAF50',
-        '4gdhc': '#2196F3',
-        '5gdhc': '#FF9800'
+        'gshp': '#10b981',
+        '4gdhc': '#3b82f6',
+        '5gdhc': '#f59e0b'
     };
-    return colors[type] || '#666';
+    return colors[type] || '#64748b';
 }
