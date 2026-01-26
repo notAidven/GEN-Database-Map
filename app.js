@@ -48,9 +48,51 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
     addMarkersToMap(allSystems);
     setupEventListeners();
+    setupResizeHandle();
     // Store the original welcome content
     welcomeContent = document.getElementById('info-panel').innerHTML;
 });
+
+// Draggable resize handle between map and info panel
+function setupResizeHandle() {
+    const handle = document.getElementById('resize-handle');
+    const container = document.getElementById('main-content');
+    let isDragging = false;
+
+    handle.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        handle.classList.add('dragging');
+        document.body.style.cursor = 'col-resize';
+        document.body.style.userSelect = 'none';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        const containerRect = container.getBoundingClientRect();
+        const offsetX = e.clientX - containerRect.left;
+        const totalWidth = containerRect.width;
+        const minMap = 300;
+        const minPanel = 250;
+
+        if (offsetX < minMap || offsetX > totalWidth - minPanel) return;
+
+        const mapFr = offsetX / totalWidth;
+        const panelFr = 1 - mapFr;
+        container.style.gridTemplateColumns = `${mapFr}fr 6px ${panelFr}fr`;
+        map.invalidateSize();
+    });
+
+    document.addEventListener('mouseup', function() {
+        if (isDragging) {
+            isDragging = false;
+            handle.classList.remove('dragging');
+            document.body.style.cursor = '';
+            document.body.style.userSelect = '';
+            map.invalidateSize();
+        }
+    });
+}
 
 function initMap() {
     // Initialize the map centered on the continental US
