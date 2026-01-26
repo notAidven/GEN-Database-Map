@@ -272,13 +272,29 @@ function setupEventListeners() {
     const systemTypeFilter = document.getElementById('system-type');
     systemTypeFilter.addEventListener('change', filterSystems);
 
+    // Filter by status
+    const statusFilter = document.getElementById('status-filter');
+    statusFilter.addEventListener('change', filterSystems);
+
     // Search functionality
     const searchInput = document.getElementById('search');
     searchInput.addEventListener('input', filterSystems);
 }
 
+// Categorize a status string into a simple category
+function getStatusCategory(status) {
+    const s = status.toLowerCase();
+    if (s.startsWith('operating')) return 'operating';
+    if (s.startsWith('under construction') || s.startsWith('construction') || s.startsWith('designed')) return 'construction';
+    if (s.startsWith('design phase')) return 'design';
+    if (s.startsWith('pre construction') || s.includes('feasibility')) return 'feasibility';
+    if (s.includes('decommissioned') || s.includes('decomissioned') || s.includes('no longer operating')) return 'decommissioned';
+    return 'unknown';
+}
+
 function filterSystems() {
     const systemType = document.getElementById('system-type').value;
+    const statusFilter = document.getElementById('status-filter').value;
     const searchTerm = document.getElementById('search').value.toLowerCase();
 
     let filteredSystems = allSystems;
@@ -286,6 +302,11 @@ function filterSystems() {
     // Filter by system type
     if (systemType !== 'all') {
         filteredSystems = filteredSystems.filter(system => system.systemType === systemType);
+    }
+
+    // Filter by status
+    if (statusFilter !== 'all') {
+        filteredSystems = filteredSystems.filter(system => getStatusCategory(system.status) === statusFilter);
     }
 
     // Filter by search term
