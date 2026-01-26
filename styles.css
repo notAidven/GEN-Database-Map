@@ -385,6 +385,11 @@ input[type="text"]::placeholder {
     border: 1px solid var(--slate-100);
 }
 
+.state-goal-section {
+    background: var(--primary-bg);
+    border: 1px solid var(--primary-light);
+}
+
 .detail-section h4 {
     color: var(--slate-700);
     margin-bottom: 10px;

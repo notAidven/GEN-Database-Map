@@ -4,6 +4,45 @@ let markers = [];
 let allSystems = geothermalSystems;
 let welcomeContent = ''; // Store original welcome content
 
+// State decarbonization goals (Source: CESA 100% Clean Energy Collaborative)
+const stateDecarbGoals = {
+    "California": { target: "100% carbon-free electricity", year: 2045, type: "Mandate" },
+    "Colorado": { target: "100% carbon-free electricity (Xcel Energy)", year: 2050, type: "Mandate" },
+    "Connecticut": { target: "100% carbon-free electricity", year: 2040, type: "Mandate" },
+    "Delaware": { target: "100% GHG reduction", year: 2050, type: "Mandate" },
+    "District of Columbia": { target: "100% renewable energy", year: 2032, type: "Mandate" },
+    "Hawaii": { target: "100% renewable energy", year: 2045, type: "Mandate" },
+    "Illinois": { target: "100% clean energy", year: 2050, type: "Mandate" },
+    "Louisiana": { target: "Net-zero GHG emissions", year: 2050, type: "Goal" },
+    "Maine": { target: "100% clean energy", year: 2050, type: "Mandate" },
+    "Maryland": { target: "Net-zero GHG emissions", year: 2045, type: "Mandate" },
+    "Massachusetts": { target: "Net-zero GHG emissions", year: 2050, type: "Mandate" },
+    "Michigan": { target: "100% carbon-free electricity", year: 2040, type: "Mandate" },
+    "Minnesota": { target: "100% carbon-free electricity", year: 2040, type: "Mandate" },
+    "Nebraska": { target: "Net-zero carbon emissions", year: 2050, type: "Mandate" },
+    "Nevada": { target: "100% carbon-free electricity", year: 2050, type: "Mandate" },
+    "New Jersey": { target: "100% carbon-free electricity", year: 2035, type: "Mandate" },
+    "New Mexico": { target: "100% carbon-free electricity", year: 2045, type: "Mandate" },
+    "New York": { target: "100% carbon-free electricity", year: 2040, type: "Mandate" },
+    "North Carolina": { target: "Carbon neutrality (electricity)", year: 2050, type: "Mandate" },
+    "Oregon": { target: "100% GHG reduction below baseline", year: 2040, type: "Mandate" },
+    "Rhode Island": { target: "100% renewable energy electricity", year: 2033, type: "Mandate" },
+    "Vermont": { target: "100% renewable energy", year: 2035, type: "Mandate" },
+    "Virginia": { target: "100% carbon-free electricity", year: 2050, type: "Mandate" },
+    "Washington": { target: "100% zero-emissions electricity", year: 2045, type: "Mandate" },
+    "Wisconsin": { target: "100% carbon-free electricity", year: 2050, type: "Goal" }
+};
+
+// Extract state from location string (e.g., "Bismarck, North Dakota" -> "North Dakota")
+function getStateFromLocation(location) {
+    if (!location) return null;
+    const parts = location.split(',');
+    if (parts.length >= 2) {
+        return parts[parts.length - 1].trim();
+    }
+    return null;
+}
+
 // Initialize map when page loads
 document.addEventListener('DOMContentLoaded', function() {
     initMap();
@@ -96,6 +135,19 @@ function showSystemDetails(system) {
             <p><strong>Status:</strong> ${system.status}</p>
             ${showField(system.siteType) ? `<p><strong>Site Type:</strong> ${system.siteType}</p>` : ''}
             ${showField(system.capacity) ? `<p><strong>Capacity:</strong> ${system.capacity}</p>` : ''}
+        </div>
+    `;
+
+    // State Decarbonization Goal
+    const stateName = getStateFromLocation(system.location);
+    const stateGoal = stateName ? stateDecarbGoals[stateName] : null;
+    sectionsHtml += `
+        <div class="detail-section state-goal-section">
+            <h4>State Decarbonization Goal</h4>
+            ${stateGoal
+                ? `<p><strong>${stateName}</strong> has a <strong>${stateGoal.type.toLowerCase()}</strong> for <strong>${stateGoal.target}</strong> by <strong>${stateGoal.year}</strong>.</p>`
+                : `<p>${stateName || 'This state'} does not currently have a 100% clean energy target.</p>`
+            }
         </div>
     `;
 
