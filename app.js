@@ -51,7 +51,26 @@ document.addEventListener('DOMContentLoaded', function() {
     setupResizeHandle();
     // Store the original welcome content
     welcomeContent = document.getElementById('info-panel').innerHTML;
+    setupEmbedHeightReporting();
 });
+
+// Reports content-height changes to a Wix HTML Component. It has no effect
+// when this page is opened directly in a browser.
+function setupEmbedHeightReporting() {
+    if (window.parent === window) return;
+
+    let lastHeight = 0;
+    const reportHeight = () => {
+        const height = Math.ceil(document.documentElement.scrollHeight);
+        if (height === lastHeight) return;
+        lastHeight = height;
+        window.parent.postMessage({ type: 'gen-database:resize', height }, '*');
+    };
+
+    new ResizeObserver(reportHeight).observe(document.body);
+    window.addEventListener('resize', reportHeight);
+    requestAnimationFrame(reportHeight);
+}
 
 // Draggable resize handle between map and info panel
 function setupResizeHandle() {
