@@ -174,8 +174,10 @@ input[type="text"]::placeholder {
     border-radius: 16px;
     padding: 24px;
     border: 1px solid var(--slate-200);
-    max-height: 620px;
-    overflow-y: auto;
+    /* Keep vertical scrolling at the embedding page level. A capped panel
+       creates a second scrollbar inside the Wix iframe. */
+    max-height: none;
+    overflow-y: visible;
     box-shadow: var(--shadow);
     margin-left: 12px;
 }
